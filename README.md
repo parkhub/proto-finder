@@ -19,7 +19,7 @@ Find a protofile's full path in a 'protos' directory by searching UP  from your 
 **Examples**
 
 ```javascript
-import protoFinder from '@parkhub/protofinder';
+import protoFinder from '@parkhub/proto-finder';
 
 const protoFullPath = protoFinder.findSingleFile('test');
 ```

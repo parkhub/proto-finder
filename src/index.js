@@ -7,7 +7,7 @@ import globby from 'globby';
  * @author Daniel Olivares
  *
  * @example
- * import protoFinder from '@parkhub/protofinder';
+ * import protoFinder from '@parkhub/proto-finder';
  *
  * const protoFullPath = protoFinder.findSingleFile('test');
  */
