@@ -1,12 +1,12 @@
 {
-  "name": "proto-finder",
+  "name": "@parkhub/proto-finder",
   "version": "0.1.0",
   "author": "Daniel Olivares",
   "license": "MIT",
   "description": "Returns the full-path of a protofile in the nearest proto directory to where your application is running from.",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist --copy-files && cp ./package.json dist",
+    "build": "babel src --out-dir dist --copy-files && cp ./package.json ./README.md dist",
     "clean": "rm -rf dist coverage",
     "lint": "eslint src",
     "commit": "git-cz",
