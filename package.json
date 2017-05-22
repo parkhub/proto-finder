@@ -1,0 +1,61 @@
+{
+  "name": "proto-finder",
+  "version": "0.1.0",
+  "author": "Daniel Olivares",
+  "license": "MIT",
+  "description": "Returns the full-path of a protofile in the nearest proto directory to where your application is running from.",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --copy-files",
+    "clean": "rm -rf dist coverage",
+    "lint": "eslint src",
+    "commit": "git-cz",
+    "docs": "documentation readme src/** --section=API",
+    "release": "yarn test && yarn run clean && yarn run lint && yarn run build",
+    "test": "jest"
+  },
+  "dependencies": {
+    "globby": "^6.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-strict-mode": "^6.24.1",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "documentation": "^4.0.0-rc.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "jest": "^20.0.3",
+    "prettier-eslint-cli": "^4.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "testMatch": [
+      "**/__tests__/**/*.test.js?(x)"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "modulePathIgnorePatterns": [
+      "dist/*"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/dist/"
+    ]
+  }
+}
