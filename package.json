@@ -1,6 +1,6 @@
 {
   "name": "@parkhub/proto-finder",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Daniel Olivares",
   "license": "MIT",
   "description": "Returns the full-path of a protofile in the nearest proto directory to where your application is running from.",
@@ -39,6 +39,9 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "jest": {
     "verbose": true,
