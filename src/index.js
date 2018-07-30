@@ -21,7 +21,7 @@ import globby from 'globby';
  */
 export async function findSingleFile(fileName) {
   const paths = await globby([`**/protos/${fileName}.proto`], {
-    realpath: true
+    absolute: true
   });
 
   return paths[0];

@@ -3,7 +3,9 @@ import protoFinder, { findSingleFile } from '../src';
 
 describe('protoFinder API', () => {
   test('Should return an instance when default function is called', () => {
+    // eslint-disable-next-line
     expect(protoFinder.findSingleFile).toBeDefined();
+    // eslint-disable-next-line
     expect(typeof protoFinder.findSingleFile).toBe('function');
   });
 
