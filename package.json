@@ -1,6 +1,6 @@
 {
   "name": "@parkhub/proto-finder",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Daniel Olivares",
   "license": "MIT",
   "description": "Returns the full-path of a protofile in the nearest proto directory to where your application is running from.",
