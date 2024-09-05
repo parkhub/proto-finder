@@ -15,7 +15,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "globby": "^8.0.1"
+    "globby": "^10.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
